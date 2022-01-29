@@ -1,9 +1,11 @@
 .card {
-    flex-basis: 24%;
+    flex-basis: 23%;
     outline: 3px solid rgb(151, 206, 76);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     box-sizing: border-box;
     border-radius: 5px;
+    margin-right: 2%;
+    ;
 
     &__image {
         width: 100%;
