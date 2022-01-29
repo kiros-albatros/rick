@@ -1,11 +1,22 @@
+@font-face {
+  font-family: 'Rick';
+  src: url(./fonts/get_schwifty.ttf);
+}
+
 .main {
   max-width: 90%;
   margin: 0 auto;
+
 
   &__title {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 50px;
+    font-family: "Rick";
+    color: rgb(151, 206, 76);
+    // color: #62a4ab;
+    font-weight: bold;
   }
 
   &__wrapper {

@@ -1,5 +1,7 @@
 .filter {
-        padding: 15px 25px;
-        outline: 1px solid blueviolet;
-        border-radius: 10px;
+        &__parameters {
+                outline: 3px solid rgb(151, 206, 76);
+                border-radius: 5px;
+                padding: 15px 25px;
+        }
 }
