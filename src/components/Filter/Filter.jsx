@@ -10,7 +10,7 @@ const Filter = ({
 	let filterData = {
 		Gender: ["female", "male", "genderless", "unknown"],
 		Status: ["dead", "alive", "unknown"],
-		Species: ["Humanoid", "Animal", "Robot", "Alien", "unknown"],
+		Species: ["Human", "Humanoid", "Animal", "Robot", "Alien", "unknown"],
 	};
 
 	//const parameters = document.querySelectorAll(".filter__parameter-item");
