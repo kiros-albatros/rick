@@ -1,5 +1,6 @@
 import "./Card.scss";
-const Card = ({ name, status, species, gender, image }) => {
+import Modal from "../Modal/Modal";
+const Card = ({ name, status, species, gender, image, location, origin }) => {
 	return (
 		<div className="card">
 			<img className="card__image" src={image} alt="" />
@@ -10,6 +11,15 @@ const Card = ({ name, status, species, gender, image }) => {
 			<br />
 			<p className="card__row">{species}</p>
 			<p className="card__row">{gender}</p>
+			<Modal
+				name={name}
+				status={status}
+				species={species}
+				gender={gender}
+				image={image}
+				location={location}
+				origin={origin}
+			/>
 		</div>
 	);
 };

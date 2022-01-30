@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "reactjs-popup": "^2.0.5"
   }
 }

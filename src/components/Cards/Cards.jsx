@@ -16,6 +16,9 @@ const Cards = ({ apiData }) => {
 							species={element.species}
 							gender={element.gender}
 							image={element.image}
+							location={element.location.name}
+							episode={element.image}
+							origin={element.origin.name}
 						/>
 					))}
 				</div>
