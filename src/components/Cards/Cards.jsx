@@ -2,7 +2,7 @@ import "./Cards.scss";
 import Card from "../Card/Card";
 
 const Cards = ({ apiData }) => {
-	console.log(apiData);
+	//console.log(apiData);
 	if (apiData) {
 		return (
 			<div className="cards">

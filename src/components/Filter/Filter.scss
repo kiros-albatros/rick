@@ -3,5 +3,17 @@
                 outline: 3px solid rgb(151, 206, 76);
                 border-radius: 5px;
                 padding: 15px 25px;
+
+        }
+
+        &__parameter-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+        }
+
+        &__parameter-item--active {
+                font-weight: bold;
+                color: rgb(151, 206, 76);
         }
 }
