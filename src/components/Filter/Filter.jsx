@@ -1,7 +1,12 @@
 import "./Filter.scss";
 import { useCallback } from "react";
 
-const Filter = ({ updateStatus, updateGender, updateSpecies }) => {
+const Filter = ({
+	updateStatus,
+	updateGender,
+	updateSpecies,
+	setPageNumber,
+}) => {
 	let filterData = {
 		Gender: ["female", "male", "genderless", "unknown"],
 		Status: ["dead", "alive", "unknown"],
@@ -11,6 +16,18 @@ const Filter = ({ updateStatus, updateGender, updateSpecies }) => {
 	//const parameters = document.querySelectorAll(".filter__parameter-item");
 
 	let filterDataKeys = Object.keys(filterData);
+
+	function reset() {
+		updateStatus("");
+		updateGender("");
+		updateSpecies("");
+		setPageNumber(1);
+
+		let items = document.querySelectorAll(".filter__parameter-item");
+		items.forEach((element) => {
+			element.classList.remove("filter__parameter-item--active");
+		});
+	}
 
 	const chooseParameter = useCallback(
 		(parameter, item) => (event) => {
@@ -33,6 +50,7 @@ const Filter = ({ updateStatus, updateGender, updateSpecies }) => {
 			} else if (parameter === "Species") {
 				updateSpecies(item);
 			}
+			setPageNumber(1);
 		},
 		[]
 	);
@@ -61,6 +79,9 @@ const Filter = ({ updateStatus, updateGender, updateSpecies }) => {
 						</ul>
 					</div>
 				))}
+				<button onClick={reset} className="filter__reset">
+					Reset
+				</button>
 			</div>
 		</div>
 	);

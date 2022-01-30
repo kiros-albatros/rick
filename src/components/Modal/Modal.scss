@@ -3,18 +3,35 @@
     ;
 }
 
+.popup-content {
+    margin: 30px auto 5px auto !important;
+}
+
 .modal {
+    border-radius: 5px;
+    padding-bottom: 10px;
+
     font-size: 12px;
     background-color: #fff;
-    ;
+
+    .card__image {
+        margin-bottom: 10px;
+    }
+
+    .card__row {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 
 .modal>.header {
     width: 100%;
-    border-bottom: 1px solid gray;
     font-size: 18px;
     text-align: center;
     box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .modal>.content {

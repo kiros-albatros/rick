@@ -10,9 +10,10 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
 	return (
 		<ReactPaginate
 			onPageChange={pageChange}
+			forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
 			pageCount={info?.pages}
-			nextLabel="next >"
-			previousLabel="< previous"
+			nextLabel=">"
+			previousLabel="<"
 			pageClassName="page-item"
 			pageLinkClassName="page-link"
 			previousClassName="page-item"

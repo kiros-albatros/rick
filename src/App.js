@@ -21,7 +21,6 @@ function App() {
 			setApiData(data);
 		})();
 	}, [api]);
-	//console.log(apiData.info);
 	return (
 		<div className="main">
 			<h1 className="main__title">Rick and Morty Characters</h1>
@@ -31,6 +30,7 @@ function App() {
 					updateStatus={updateStatus}
 					updateGender={updateGender}
 					updateSpecies={updateSpecies}
+					setPageNumber={setPageNumber}
 				/>
 				<Cards apiData={apiData.results} />
 			</div>

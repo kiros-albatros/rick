@@ -25,7 +25,14 @@ const Cards = ({ apiData }) => {
 			</div>
 		);
 	} else {
-		return "empty";
+		return (
+			<div className="cards">
+				<h2>Cards</h2>
+				<div className="cards__container">
+					<p>No cards found</p>
+				</div>
+			</div>
+		);
 	}
 };
 

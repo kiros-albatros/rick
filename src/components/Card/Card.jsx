@@ -9,17 +9,20 @@ const Card = ({ name, status, species, gender, image, location, origin }) => {
 				{status}
 			</span>
 			<br />
-			<p className="card__row">{species}</p>
-			<p className="card__row">{gender}</p>
-			<Modal
-				name={name}
-				status={status}
-				species={species}
-				gender={gender}
-				image={image}
-				location={location}
-				origin={origin}
-			/>
+			<p className="card__row">
+				<span>{species}</span> - <span>{gender}</span>
+			</p>
+			<p className="card__row">
+				<Modal
+					name={name}
+					status={status}
+					species={species}
+					gender={gender}
+					image={image}
+					location={location}
+					origin={origin}
+				/>
+			</p>
 		</div>
 	);
 };
