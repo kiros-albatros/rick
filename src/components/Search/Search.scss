@@ -1,0 +1,21 @@
+.search {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+
+
+    &__input {
+        width: 80%;
+        outline: none;
+        border: 1px solid rgb(151, 206, 76);
+        border-radius: 2px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

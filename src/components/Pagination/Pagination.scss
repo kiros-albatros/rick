@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    //   outline: 1px solid red;
+}
+
+.page-item,
+.break {
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(151, 206, 76);
+    }
+
+    @media(max-width: 1000px) {
+        padding: 5px;
+    }
+}
+
+.active {
+    color: rgb(151, 206, 76);
+    font-weight: bold;
+}
